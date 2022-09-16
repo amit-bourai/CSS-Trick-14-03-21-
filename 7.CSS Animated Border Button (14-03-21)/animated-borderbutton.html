@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animated Border Button</title>
+	<style type="text/css">
+		body{ font-family: arial,helvetica;text-align:center;}
+		h1{ line-height: 45px;}
+		h1 span{
+		  color: #E01E48;
+		}
+
+		.btn{
+			color: #E01E48;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 0;
+			position: relative;
+		}
+
+		.btn span{
+			display: block;
+			padding: 10px 13px;
+			position: relative;
+			/*border: 1px solid #000;*/
+		}
+
+		.btn:before,
+		.btn:after,
+		.btn span:before,
+		.btn span:after{
+			content: "";
+			background: #E01E48;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 0.15s ease-in-out 0s;
+		}
+		.btn:before,
+		.btn:after{
+			width: 2px;
+			height: 0;
+		}
+		.btn span:before,
+		.btn span:after{
+			width: 0;
+			height: 2px;
+			transition-delay: 0.15s;
+		}
+		.btn:after{
+			top: auto;
+			left: auto;
+			right: 0;
+			bottom: 0;
+		}
+		.btn span:before{
+			right: 0;
+			left: auto;
+		}
+		.btn span:after{
+			top: auto;
+			bottom: 0;
+		}
+		.btn:hover:after,
+		.btn:hover:before{
+			height: 100%;
+			transition-delay: 0.15s;
+		}
+		.btn:hover span:after,
+		.btn:hover span:before{
+			width: 100%;
+			transition-delay: 0s;
+		}
+	</style>
+</head>
+<body>
+	<h1><span>Yahoo Baba</span> <br> Animated Border Button </h1>
+
+	<a href="" class="btn">
+		<span>save data</span>
+	</a>
+	<a href="" class="btn">
+		<span>save data here </span>
+	</a>
+
+</body>
+</html>

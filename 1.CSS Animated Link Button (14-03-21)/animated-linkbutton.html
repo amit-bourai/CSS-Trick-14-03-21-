@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animated Menu</title>
+  <style>
+    body{ font-family: arial,helvetica;text-align:center;}
+    h1{ line-height: 45px;}
+    h1 span{
+      color: #E01E48;
+    }
+  
+
+    .btn1{
+      border: 1px solid #2980b9;
+      color: #2980b9;
+      font-family: arial;
+      font-size: 8px;
+      text-decoration: none;
+      padding: 5px 5px;
+      display: inline-block;
+      position: relative;
+      transition: all 0.5s ease 0s;
+    }
+    .btn1:after{
+      background: #2980b9;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      z-index: -1;
+      transition: all 0.5s ease 0s;
+    }
+    .btn1:hover{
+      color: #fff;
+    }
+    .btn1:hover:after{
+      width: 100%;
+    }
+
+    .btn2{
+      border: 1px solid #16a085;
+      color: #16a085;
+      font-family: arial;
+      font-size: 10px;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: inline-block;
+      position: relative;
+      transition: all 0.5s ease 0s;
+    }
+    .btn2:after{
+      background: #16a085;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      z-index: -1;
+      transition: all 0.5s ease 0s;
+    }
+    .btn2:hover{
+      color: #fff;
+    }
+    .btn2:hover:after{
+      width: 100%;
+    }
+
+    .btn3{
+      border: 1px solid #c0392b;
+      color: #c0392b;
+      font-family: arial;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: inline-block;
+      position: relative;
+      transition: all 0.5s ease 0s;
+    }
+    .btn3:after{
+      background: #c0392b;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      z-index: -1;
+      transition: all 0.5s ease 0s;
+    }
+    .btn3:hover{
+      color: #fff;
+    }
+    .btn3:hover:after{
+      width: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1><span>Yahoo Baba</span> <br> Animated Link Buttons </h1>
+
+  <a href="" class="btn1">Save</a><br><br>
+  <a href="" class="btn2">Save</a><br><br>
+  <a href="" class="btn3">Save</a>
+</body>
+</html>
